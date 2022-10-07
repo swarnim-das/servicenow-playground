@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_analytics_bucket">
+    <sys_analytics_bucket action="INSERT_OR_UPDATE">
+        <analytics_channel display_value="web">6496ef61c7001010393d265c95c260b9</analytics_channel>
+        <application_name>Playground</application_name>
+        <bucket_document_id>c5401a8f475251102b2c016a436d4351</bucket_document_id>
+        <bucket_metadata/>
+        <bucket_table_name>sp_portal</bucket_table_name>
+        <bucket_type>service_portal</bucket_type>
+        <enable_unauthenticated_user_tracking>false</enable_unauthenticated_user_tracking>
+        <enabled>true</enabled>
+        <internal_name_for_index>x_402923_playgroun.sp_portal.c5401a8f475251102b2c016a436d4351</internal_name_for_index>
+        <sys_class_name>sys_analytics_bucket</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-07 06:30:31</sys_created_on>
+        <sys_id>c8f0924f475251102b2c016a436d43b6</sys_id>
+        <sys_name>Playground</sys_name>
+        <sys_package display_value="Playground" source="x_402923_playgroun">c2d38e03475251102b2c016a436d43ad</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Playground">c2d38e03475251102b2c016a436d43ad</sys_scope>
+        <sys_update_name>sys_analytics_bucket_c8f0924f475251102b2c016a436d43b6</sys_update_name>
+    </sys_analytics_bucket>
+</record_update>

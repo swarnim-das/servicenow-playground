@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>10</order>
+        <role display_value="x_402923_playgroun.admin" name="x_402923_playgroun.admin">a6144ecf471251102b2c016a436d4338</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-07 05:34:25</sys_created_on>
+        <sys_id>22144ecf471251102b2c016a436d433a</sys_id>
+        <sys_name>a6144ecf471251102b2c016a436d4338</sys_name>
+        <sys_package display_value="Playground" source="x_402923_playgroun">c2d38e03475251102b2c016a436d43ad</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Playground">c2d38e03475251102b2c016a436d43ad</sys_scope>
+        <sys_update_name>sys_embedded_help_role_22144ecf471251102b2c016a436d433a</sys_update_name>
+    </sys_embedded_help_role>
+</record_update>

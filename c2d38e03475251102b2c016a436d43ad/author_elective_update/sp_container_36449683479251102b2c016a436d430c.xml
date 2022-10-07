@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Playground Home - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="playground_home">9ea11a8f475251102b2c016a436d4314</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-07 06:45:10</sys_created_on>
+        <sys_id>36449683479251102b2c016a436d430c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Playground Home - Container 1</sys_name>
+        <sys_package display_value="Playground" source="x_402923_playgroun">c2d38e03475251102b2c016a436d43ad</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Playground">c2d38e03475251102b2c016a436d43ad</sys_scope>
+        <sys_update_name>sp_container_36449683479251102b2c016a436d430c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-07 06:45:10</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Playground">c2d38e03475251102b2c016a436d43ad</application>
+        <file_path/>
+        <instance_id>f380151adbe9370052dd2f17d49619e6</instance_id>
+        <instance_name>dev86425</instance_name>
+        <name>sp_container_36449683479251102b2c016a436d430c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Playground Home - Container 1</name><order>1</order><sp_page display_value="playground_home">9ea11a8f475251102b2c016a436d4314</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-10-07 06:45:10</sys_created_on><sys_id>36449683479251102b2c016a436d430c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Playground Home - Container 1</sys_name><sys_package display_value="Playground" source="x_402923_playgroun">c2d38e03475251102b2c016a436d43ad</sys_package><sys_policy/><sys_scope display_value="Playground">c2d38e03475251102b2c016a436d43ad</sys_scope><sys_update_name>sp_container_36449683479251102b2c016a436d430c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-10-07 06:45:10</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>1148434379</payload_hash>
+        <record_name>Playground Home - Container 1</record_name>
+        <reverted_from/>
+        <source>42d3ca83475251102b2c016a436d4302</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-07 06:45:10</sys_created_on>
+        <sys_id>7e449683479251102b2c016a436d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183b130d13b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-07 06:45:10</sys_updated_on>
+        <type>Container</type>
+        <update_guid>b6449683199251103981cb35d0e32d0d</update_guid>
+        <update_guid_history>b6449683199251103981cb35d0e32d0d:1148434379</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Playground Home - Container 1">54549203479251102b2c016a436d434d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-07 06:45:16</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>e33d4db0fa7f4ede8e1163cf17e01d41</sys_id>
+        <sys_metadata>36449683479251102b2c016a436d430c</sys_metadata>
+        <sys_name>Playground Home - Container 1</sys_name>
+        <sys_package display_value="Playground" source="x_402923_playgroun">c2d38e03475251102b2c016a436d43ad</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Playground">c2d38e03475251102b2c016a436d43ad</sys_scope>
+        <sys_scope_delete display_value="">90eb1859c81b467896141287dc18ca40</sys_scope_delete>
+        <sys_update_name>sp_container_36449683479251102b2c016a436d430c</sys_update_name>
+        <sys_update_version display_value="sp_container_36449683479251102b2c016a436d430c">7e449683479251102b2c016a436d430d</sys_update_version>
+    </sys_metadata_delete>
+</record_update>
