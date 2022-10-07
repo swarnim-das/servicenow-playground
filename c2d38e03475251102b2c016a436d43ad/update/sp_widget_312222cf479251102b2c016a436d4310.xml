@@ -21,14 +21,16 @@
 		c.modalInstance.close();
 		if(evt.targetScope.table == 'service_task') {
 			if(parms.field.name == 'task_picker') {
+				/*
 				c.data.task = {
 					"number": parms.displayValue,
 					"sys_id": parms.newValue
 				}
+				*/
 				
 				$scope.server.get({
 					action: 'fetchTask',
-					taskNumber: parms.displayValue,
+					//taskNumber: parms.displayValue,
 					taskVal: parms.newValue,
 					table: 'service_task',
 				}).then(function(response){
@@ -64,7 +66,7 @@
 	
 	if(input && input.action == 'fetchTask') {
 		
-		var task = new global.GlideQuery('service_task')
+		var task = new global.GlideQuery(input.table)
 			.get(input.taskVal, ['number', 'short_description', 'priority', 'assignment_group.name'])
 		  .orElse({ number: 'Default', priority: 0 });
 		
