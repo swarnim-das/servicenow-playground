@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope, $timeout, $uibModal, $location,spModal, spUtil) {
+  /* widget controller */
+  var c = this;
+	
+	c.open = function() {
+		$scope.fieldObj = {
+			displayValue: "",
+			value: "", 
+			name: "task_picker"
+		};
+		c.modalInstance = $uibModal.open({
+			templateUrl: 'manage-task-modal',
+			scope: $scope
+		});
+	}
+	
+	$scope.$on("field.change", function(evt, parms) {
+		c.modalInstance.close();
+		if(evt.targetScope.table == 'service_task') {
+			if(parms.field.name == 'task_picker') {
+				c.data.task = {
+					"number": parms.displayValue,
+					"sys_id": parms.newValue
+				}
+				
+				$scope.server.get({
+					action: 'fetchTask',
+					taskNumber: parms.displayValue,
+					taskVal: parms.newValue,
+					table: 'service_task',
+				}).then(function(response){
+					$scope.data.task = response.data.task;
+					//console.log(response.data.task);
+				});
+			}
+		}
+	});
+	
+	c.cancelModal = function() {
+		c.modalInstance.close();
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>demo_modal</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Demo Modal</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	if(input && input.action == 'fetchTask') {
+		
+		var task = new global.GlideQuery('service_task')
+			.get(input.taskVal, ['number', 'short_description', 'priority', 'assignment_group.name'])
+		  .orElse({ number: 'Default', priority: 0 });
+		
+		data.task = task;
+		
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-07 07:45:43</sys_created_on>
+        <sys_id>312222cf479251102b2c016a436d4310</sys_id>
+        <sys_name>Demo Modal</sys_name>
+        <sys_package display_value="Playground" source="x_402923_playgroun">c2d38e03475251102b2c016a436d43ad</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Playground">c2d38e03475251102b2c016a436d43ad</sys_scope>
+        <sys_update_name>sp_widget_312222cf479251102b2c016a436d4310</sys_update_name>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Let's try modal!</h1>
+  </div>
+  <br><br>
+  <button class="btn btn-primary" ng-click="c.open()">
+  	Open Modal
+  </button>
+  <br><br>
+  <div class="container" ng-show="c.data.task.number">
+    <table class="table table-hover">	
+  <tbody>
+    <tr>
+      <th scope="row">Number</th>
+      <td>{{c.data.task.number}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Short Description</th>
+      <td>{{c.data.task.short_description}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Priority</th>
+      <td>{{c.data.task.priority}}</td>
+    </tr>
+    <tr>
+    	<th scope="row">Assignment Group</th>
+      <td>{{c.data.task.assignment_group.name}}</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+  
+  
+</div>
+  
+</div>]]></template>
+    </sp_widget>
+</record_update>
